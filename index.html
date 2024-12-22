@@ -1,0 +1,77 @@
+<!--"!DOCTYPE"用于宣告文件类型,可以直接#+tab直接形成完整代码-->
+<!DOCTYPE html>
+<!--html是网页主题标签,网页内容都要在html标签中-->
+<!--lang用于表明网页文字,其中zh-CN是大陆中文-->
+<html lang="zh-CN">
+<!--head是一些头部内容,一般不会显示在网页之中,主要是一些后台资料-->
+<!--例如文件的字符编码、关键字和程式脚本-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimonYear</title>
+    <!--style标签是CSS语法用于修改颜色,字体大小等的标签-->
+    <!--他有三种撰写方法：
+        第一种是直接写进h1等标签中:
+            <h1 style="color:red">
+        第二种就是下面这样直接写进head标签中，用于减少重复操作，由于这里没有h6只作为学习展示
+        第三种，右键新建一个表单（类似于py中新建一个自写库），然后将CSS语法写入表单中，
+        在需要使用的时候引用即可，例如新建文件：语法.css
+        在次文件内写入下列方法二演示的公式
+        再在head标签中加入<link rel="stylesheet" href="文件名称">
+        用这种方法就可以轻松运营大型的网站（有多个网页）
+        了解完撰写方法，再来了解他的其他功能：
+        1.颜色color:颜色名称或者色号
+        2.字体大小font-size:像素值px
+        -->
+    <style>
+        h6{
+            color:firebrick;
+        }
+    </style>
+    <link rel="stylesheet" href="sx.css">
+</head>
+<!--body标签是用户能看到的内容(网页文字、图片、按钮)-->
+<body>
+    <!--header标签是HTML5的新标签语法
+    header是网页页首，用于放置LOGO标题等等
+    nav用于放置网站导览列和主选单
+    main用于放置网页主要内容，可以用section标签将不同主题的内容分类
+    footer页尾用于放置邮箱、地址、版权声明等等-->
+    <header>
+    <!--h1通常是层级最高的标题，最低为h6-->
+        <h1 style="font-size:40px;color:rgb(255, 29, 29)">SimonSongs</h1>
+    <!--p标签是网页内容，p标签展示的内容是会占据整行内容的区块元素-->
+    <!--然而用strong（粗体）和em（斜体）可以转化为不会占整行的行内元素-->
+    <!--如果想要在文本中间断行，可以用br标签在需要断行的位置加上-->
+        <h2 style="color:rgb(17, 0, 253)"><strong>Oh! Hi!<br> Wanna listen to my songs?</strong>
+        <strong>Here they are:</strong></h2>
+    <!--ol是网页清单列表标签,li是有序标签,而ul是无序标签,他们的差别在于是否显示数字。-->
+        <nav>
+            <ul style="font-size:25px">
+                <li><strong><a href="https://node.kg.qq.com/SeViqIn5P5/play_v2/?s=IIN4h0I-ehajAI-B&g_f=personal&appsource=&pageId=personalH5" style="color: rgb(230, 65, 65);">讨厌红楼梦</a></strong></li>
+                <li><strong><a href="https://kg.qq.com/node/play?s=UUz2XgUp5N25jUa9&g_f=personal&appsource=&pageId=personalH5" style="color: rgb(116, 29, 65);">神探</a></strong></li>
+                <li><strong><a href="https://node.kg.qq.com/play?s=ccV-DGc4tKG2ycn-&g_f=work_manager" style="color: rgba(255, 39, 93, 0.877)">I LOVE YOU</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="Loading">
+        <p style="font-size:30px;color:white">SIMONYEAE</p>
+    <!--blockquote标签用于引用座右铭等等，其中有cite属性可以链接到引用来源-->
+    <!--img标签用于插入图片，其中src是图片路径，alt是图片名词-->
+        </section>
+        <section class="line">
+        </section>
+        <section class="photo">
+            <div>
+                <img src="images practice/MUMEI.png" alt="Nanashi Mumei">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p><strong><a href="https://space.bilibili.com/271953060?spm_id_from=333.1007.0.0">Learn More</a></strong></p>
+        </div>
+    </footer>
+</body>
+</html>
